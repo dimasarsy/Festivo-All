@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Festiverse</title>
+
+  <link rel="icon" href="../img/logo1.png" type="image/png">
+
+  <link href="../vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style type="text/css">
+        html {
+            overflow: auto;
+        }
+          
+        html,
+        body,
+        div,
+        iframe {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            border: none;
+        }
+          
+        iframe {
+            display: block;
+            width: 100%;
+            border: none;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+  
+</head>
+
+<body>
+  <frameset rows="100%,*">
+    <iframe src="https://demo.readyplayer.me" frameborder="0"></iframe>
+  </frameset>
+
+  <script>
+    window.addEventListener("message", receiveMessage, false);
+  </script>
+</body>
+</html>

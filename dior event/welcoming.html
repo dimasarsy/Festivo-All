@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>User Registration</title>
+
+  <link rel="icon" href="img/logo1.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/style_dior.css">
+	<script src="dist/sweetalert2.all.min.js"></script>
+
+	<!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<style>
+	#play{
+  	background-image: url('image/play.png');
+}
+</style>
+</head>
+
+<body>
+	<div class="banner">
+		<video autoplay loop muted>
+			<source src="video/background.mp4">
+		</video>
+	</div>
+
+	  <div class="login-box">
+
+				<h5>Welcome to <br>
+				Dior Virtual Exhibit SS 2022 </h5>
+	      
+	      <br><br><br>
+	      <p style="left:100px; top: 250px;text-align: center;"> Your response has been submitted, thank you!<br> Enjoy the show! </p>
+	      <br><br><br>
+
+					<a href="https://hub.link/TRRfgeT">
+						<button type="submit" class="submit" style="position: absolute;width: 311px; height: 49px; font-family: Zen Kaku Gothic Antique;font-style: normal;font-weight: bold; font-size: 23px; line-height: 46px; text-align: center;color: #FFFFFF;">Go To Show !</button>
+					</a>
+
+				<div class="audio">
+					<button id="play"></button>
+  		</div>
+	  </div>
+
+
+
+		<script>
+			var musik = new Audio();
+			musik.src = "audio.m4a";
+			musik.loop = true;
+			musik.play();
+
+			function mulaiAudio(){
+
+				var play=document.getElementById("play");
+
+				play.addEventListener('click', fplay);
+				
+				function fplay(){
+					if(musik.paused){
+						musik.play();
+						play.style.background="url('image/play.png')"
+					}else{
+						musik.pause();
+						play.style.background="url(image/pause.png)"
+					}
+				}
+			}
+			window.addEventListener('load', mulaiAudio);
+		</script>
